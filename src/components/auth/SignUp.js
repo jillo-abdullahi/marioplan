@@ -21,7 +21,6 @@ class SignUp extends Component {
     }
     render() {
         const { auth, authError } = this.props;
-        console.log(this.props)
         if(auth.uid) return <Redirect to='/' />
         return (
             <div className="container">
